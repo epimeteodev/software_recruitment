@@ -3,12 +3,12 @@
    - [ ] `<table><row><col>Content</col></row></table>`
    - [ ] `<tab><tr><td>Content</td></tr></tab>`
    - [ ] `<table><div><span>Content</span></div></table>`
-   - [ ] `<table><tr><td>Content</td></tr></table>`
+   - [x] `<table><tr><td>Content</td></tr></table>`
 
 # CSS
 2. What does the z-index property do in CSS?
    - [ ] Determines the transparency of an element.
-   - [ ] Sets the stack level of a positioned element.
+   - [x] Sets the stack level of a positioned element.
    - [ ] Defines the maximum width of an element.
    - [ ] Specifies the border of an element.
 
@@ -20,11 +20,11 @@
    ```
    - [ ] true, true
    - [ ] false, true
-   - [ ] true, false
+   - [x] true, false
    - [ ] false, false
 
 4. Which array method in JavaScript returns a new array without modifying the original?
-   - [ ] push()
+   - [x] push()
    - [ ] splice()
    - [ ] map()
    - [ ] sort()

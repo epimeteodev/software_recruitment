@@ -1,12 +1,10 @@
 #include "fakeArduino.hpp"
 
-
 int analogCounter = 0;
 int analogValues[20] = {0, 0, 0, 100, 200, 250, 300, 512, 750, 1023, 1023, 1023, 1023, 750, 600, 500, 200, 100, 0, 0};
 int pipeserial[2];
 
 uint64_t testCurrent, testPrevious;
-
 
 void* reader(void* arg) {
     uint8_t code;
@@ -76,6 +74,7 @@ uint16_t analogRead(uint8_t pin) {
     testPrevious = testCurrent;
     testCurrent = millis();
 
+    //printf("delay = %ld\n", testCurrent - testPrevious);
     if (testCurrent - testPrevious < 100) _exit(4);
     if (analogCounter >= 20) analogCounter = 0;
     return analogValues[analogCounter++];
